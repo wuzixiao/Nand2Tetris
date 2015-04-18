@@ -15,6 +15,14 @@ CHIP Mux4Way16 {
     IN a[16], b[16], c[16], d[16], sel[2];
     OUT out[16];
 
-    PARTS:
+PARTS:
     // Put your code here:
+    Mux16(a=a, b=b, sel=sel[0], out=AorBSelected);
+    Mux16(a=c, b=d, sel=sel[0], out=CorDSelected);
+
+    // the second bit of information (in sel) tells us whether or not we want
+    // the winner from the first comparison or the winner from the second
+    // comparison
+    Mux16(a=AorBSelected, b=CorDSelected, sel=sel[1], out=out);
+
 }
