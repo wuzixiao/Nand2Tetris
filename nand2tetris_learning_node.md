@@ -151,15 +151,21 @@ The above are correct.
 
 The above are wrong.
 
+###About Mux
 
+In hdl, we can not use if statement as easy as other software programming lauguage. Luckly, we have Mux, Mux4Way, Mux8Way. After we figure out how to implement Mux4Way and Mux8Way with Mux, we know how to translate 'if' to Mux. 
 
 ### writting hdl
 **Tips**:
 *when you refer to a Not gate in your code, the system looks for it, and the order it performs a search is such that the system prefers files in the same directory over the built-in definitions*
 
 
+###2.1 Binary Numbers
 
+* how to convert decial number to binary number
+* how to convert binary number to decial number
 
+### 2.
 
 
 
