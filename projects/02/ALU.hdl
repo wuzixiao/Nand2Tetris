@@ -52,6 +52,7 @@ PARTS:
     Not16(in=sumxy, out=negsumxy);
     And16(a=xpros, b=ypros, out=andxy);
     Not16(in=andxy, out=negandxy);
+
     Mux4Way16(a=andxy, b=negandxy, c=sumxy, d=negsumxy, sel[1] = f, sel[0] = no, out=out, out[15]=ng, out[0..7]=btmout, out[8..15]=tpout);
 
     Or8Way(in=btmout, out=btmtrue);

@@ -168,6 +168,39 @@ In hdl, we can not use if statement as easy as other software programming laugua
 ### 2.
 
 
+### 3.1 Sequential Logic
+
+*Time*
+* use same hardware many times. ex: loop
+* Memory
+
+we use discrete time steps instead of continuous time to ensure the system state is stabilized.
+
+**Combinatorial Logic vs. Sequential Logic**
+* Combinatorial: out[t] = func(in[t])
+* Sequential: out[t] = func(in[t-1])
+
+Adding time to the state changing by chips
+
+*Flip Flogs*
+
+1-bit register
+
+*Memory Unit*
+* Main memory
+* disk
+
+The most basic memory element : Register
+
+ RAM unit:
+* a sequence of n addressable register
+* given point of time, only one register in RAM is selected
+* address control by k=log2n
+
+Althougth it is just an abstract module, it is clear demonstrate how RAM work. If you have experience of C programming, it is not hard to understand.
+
+ 
+
 
 
 
